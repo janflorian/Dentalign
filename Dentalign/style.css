@@ -1,0 +1,837 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body 
+{
+    background: url(bgi.jpg);
+    background-color: whitesmoke;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+ 
+}
+.wrapper 
+{
+    margin: auto;
+    background-color: rgba(245, 245, 245, 0.445);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.wrapper nav
+{
+    padding: 32px 16px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    gap: 16px;
+}
+.wrapper .logo
+{
+    font-size: 30px;
+    font-weight: 600;
+    color: saddlebrown;
+}
+.wrapper .navbar
+{
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+.wrapper .navbar a
+{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+}
+.wrapper .navbar a:hover
+{
+    color: saddlebrown;
+}
+.wrapper .navbar .home
+{
+    color: saddlebrown;
+    text-decoration: underline;
+}
+.index-header
+{
+    text-align: center;
+    padding: 0 16px;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    align-items: center;
+}
+.index-header .index-content h1
+{
+    margin-bottom: 16px;
+    font-size: 50px;
+    font-weight: 700;
+    color: saddlebrown;
+    border: 5px;
+    letter-spacing: 5px;
+    text-shadow: 3px 0px 0px black;
+}
+.index-header .index-content h1 span
+{
+    font-weight: 400;
+}
+.index-header .index-content p
+{
+    color: black;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight:200;
+    margin-left: 20px;
+    text-shadow: 1px 0px 0px black;
+    margin-bottom: 32px;
+    line-height: 30px;
+}
+.index-main-btn
+{
+    display: flex;
+    justify-content: center;
+}
+.index-main-btn .index-btn
+{
+    display: inline-block;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    background: saddlebrown;
+    color: whitesmoke;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: transform .5s;
+}
+.index-main-btn  .index-btn:hover
+{
+    color: black;
+    background-color: whitesmoke;
+    background: transparent;
+    border: 2px black solid;
+}
+.index-main-btn .index-image
+{
+    position: relative;
+    text-align: center;
+    isolation: isolate;
+}
+.index-image .index-image_bg
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 450px;
+    width: 450px;
+    background-color: transparent;
+    border-radius: 100%;
+    z-index: -1;
+}
+
+
+.wrapper .navbar .abt
+{
+    color: saddlebrown;
+    text-decoration: underline;
+}
+.about 
+{
+    width: 100%;
+    height: 100vh;
+    padding: 10px 10px;
+    background: url(bgi.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+}
+.about .about-content
+{
+    text-align: center;
+}
+.about .about-content h2 
+{
+    color: saddlebrown;
+    border: 5px;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-shadow: 3px 0px 0px black;
+}
+.about .about-content h2::after
+{
+    content: "";
+    height: 4px;
+    width: 50px;
+    background-color: saddlebrown;
+    display: block;
+    margin: auto;
+}
+.about .about-content p 
+{
+    margin-top: 5px;
+    color: whitesmoke;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight:300;
+    text-shadow: 3px 0px 0px black;
+}
+.about-container
+{
+    width: 90%;
+    padding: 10px 20px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.about-container .about-input
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image
+{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.about-image img
+{
+    max-width: 100%;
+    transition: transform .5s;
+    display: block;
+    border-radius: 10px;
+}
+.about-image:hover img
+{
+    transform: scale(1.1);
+}
+.about-content2 
+{
+    flex: 1;
+    text-align: justify;
+}
+.about-content2 h3 
+{
+    margin-bottom: 5px;
+    color: saddlebrown;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight:300;
+    margin-left: 20px;
+    text-shadow: 2px 0px 0px black;
+}
+.about-content2 p 
+{
+    color: whitesmoke;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight:300;
+    margin-left: 20px;
+    text-shadow: 3px 0px 0px black;
+}
+.about-content2 .abt-button
+{
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+    background-color: saddlebrown;
+}
+.about-content2 .abt-button:hover
+{
+    background-color: whitesmoke;
+}
+
+
+.wrapper .navbar .srvice
+{
+    color: saddlebrown;
+    text-decoration: underline;
+}
+.services
+{
+    height: 100vh;
+    width: 100%;
+    padding: 10px 10px;
+    background: url(bgi.jpg);
+     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.services .services-content
+{
+    text-align: center;
+}
+.services .services-content h2 
+{
+    color: saddlebrown;
+    border: 5px;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-shadow: 3px 0px 0px black;
+}
+.services .services-content h2::after
+{
+    content: "";
+    height: 4px;
+    width: 50px;
+    background-color: saddlebrown;
+    display: block;
+    margin: auto;
+}
+.services .services-content p 
+{
+    margin-top: 5px;
+    color: whitesmoke;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight:300;
+    text-shadow: 3px 0px 0px black;
+}
+.services-row 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 50px;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.services-row .services-container
+{
+    background-color: rgba(245, 245, 245, 0.527);
+    padding: 25px 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: transform .5s;
+}
+.services-row .services-container:hover
+{
+    transform: scale(1.1);
+}
+.services-row .services-container i 
+{
+    font-size: 40px;
+    color: saddlebrown;
+    margin-bottom: 10px;
+}
+.services-row .services-container h3 
+{
+    margin-bottom: 5px;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight:300;
+    margin-left: 20px;
+    text-shadow: 2px 0px 0px black;
+}
+
+
+.wrapper .navbar .tm
+{
+    color: saddlebrown;
+    text-decoration: underline;
+}
+.team 
+{
+    height: 100vh;
+    width: 100%;
+    padding: 10px 10px;
+    background: url(bgi.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+}
+.team .team-content
+{
+    text-align: center;
+}
+.team  .team-content h2 
+{
+    color: saddlebrown;
+    border: 5px;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-shadow: 3px 0px 0px black;
+}
+.team  .team-content h2::after
+{
+    content: "";
+    height: 4px;
+    width: 50px;
+    background-color: saddlebrown;
+    display: block;
+    margin: auto;
+}
+.team  .team-content p 
+{
+    margin-top: 5px;
+    color: whitesmoke;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight:300;
+    text-shadow: 3px 0px 0px black;
+}
+.team-row 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.team-row .team-container
+{
+    background-color: rgba(245, 245, 245, 0.527);
+    padding: 25px 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: transform .5s;
+}
+.team-row .team-container:hover
+{
+    transform: scale(1.1);
+}
+.team-row .team-container h3 
+{
+    color: saddlebrown;
+    border: 5px;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-shadow: 3px 0px 0px black;
+    text-align: center;
+    margin-left: 20px;
+}
+.team-row .team-container p
+{
+    color: black;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight:300;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-shadow: 2px 0px 0px black;
+}
+
+
+.wrapper .navbar .cntact
+{
+    color: saddlebrown;
+    text-decoration: underline;
+}
+.contact
+{
+    height: 100vh;
+    width: 100%;
+    padding: 10px 10px;
+    background: url(bgi.jpg);
+     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.contact .contact-content
+{
+    text-align: center;
+}
+.contact .contact-content h2
+{
+    color: saddlebrown;
+    border: 5px;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-shadow: 3px 0px 0px black;
+}
+.contact .contact-content h2::after
+{
+    content: "";
+    height: 4px;
+    width: 50px;
+    background-color: saddlebrown;
+    display: block;
+    margin: auto;
+}
+.contact .contact-content p
+{
+    margin-top: 5px;
+    color: whitesmoke;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight:300;
+    text-shadow: 3px 0px 0px black;
+}
+.contact-container
+{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container .contact-information
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-container .contact-information .contact-box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contact-container .contact-information .contact-box .contact-icon
+{
+    min-width: 80px;
+    height: 80px;
+    background: whitesmoke;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.contact-container .contact-information .contact-box .contact-icon .contact-text 
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+.contact-container .contact-information .contact-box .contact-text h3
+{
+    color: saddlebrown;
+    border: 5px;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-shadow: 3px 0px 0px black;
+    text-align: left;
+    margin-left: 20px;
+}
+.contact-container .contact-information .contact-box .contact-text p
+{
+    color: whitesmoke;
+    font-size: 20px;
+
+    letter-spacing: 3px;
+    font-weight:300;
+    margin-left: 20px;
+    text-shadow: 3px 0px 0px black;
+}
+.contact-connect 
+{
+    text-align: left;
+    color: whitesmoke;
+    text-shadow: 3px 0px 0px black;
+    margin-top: 50px;
+     letter-spacing: 3px;
+    font-weight: 500;
+    border-left: 50px solid saddlebrown;
+    padding-left: 10px;
+    
+}
+.contact-social
+{
+    display: flex;
+    gap: 30px;
+    margin-left: 60px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+.contact-social li
+{
+    list-style: none;
+}
+.contact-social li a
+{
+    color: black;
+    font-size: 24;
+    transition: 0.25s;
+}
+.contact-social li a:hover
+{
+    color: saddlebrown;
+} 
+.contact-contactForm 
+{
+    width: 40%;
+    padding: 40px;
+    background-color: rgba(245, 245, 245, 0.527);
+    border-radius: 10px;
+    transition: transform .5s;
+    text-align: center;
+    justify-content: center;
+}
+.contact-contactForm:hover
+{
+    transform: scale(1.1);
+}
+.contact-contactForm form 
+{
+    background: transparent;
+}
+.contact-contactForm h2 
+{
+    font-size: 25px;
+    color: saddlebrown;
+    font-weight: 500;
+    color: saddlebrown;
+    border: 5px;
+    letter-spacing: 5px;
+    text-shadow: 3px 0px 0px black;
+}
+.contact-contactForm .contact-inputBox 
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contact-contactForm .contact-inputBox input, 
+.contact-contactForm .contact-inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+.contact-contactForm .contact-inputBox span 
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 2px 0;
+    pointer-events: none;
+    transform: 0.5s;
+    color: black;
+}
+.contact-contactForm .contact-inputBox input:focus ~ span,
+.contact-contactForm .contact-inputBox input:valid ~ span,
+.contact-contactForm .contact-inputBox textarea:focus ~ span,
+.contact-contactForm .contact-inputBox textarea:valid ~ span 
+{
+    color: saddlebrown;
+    font-size: 12px;
+    transform: translate(-20px);
+}
+.contact-contactForm .contact-inputBox input[type="submit"] 
+{
+    width: 60%;
+    background: saddlebrown;
+    border-radius: 20px;
+    color: rgba(245, 245, 245, 0.726);
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.contact-contactForm .contact-inputBox input[type="submit"]:hover
+{
+    color: black;
+    background: transparent;
+}
+.bodys .p{
+    color: black;
+}
+
+
+.readmore-content
+{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 50px;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.readmore-content .readmore-input
+{
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 15px;
+    background-color: rgba(245, 245, 245, 0.527);
+    border-radius: 10px;
+    transition: transform .5s;
+}
+.readmore-content .readmore-input:hover 
+{
+    transform: scale(1.1);
+}
+.readmore-content .readmore-input .readmore-icon
+{
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.readmore-content .readmore-input h3
+{
+    color: saddlebrown;
+    border: 5px;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-shadow: 3px 0px 0px black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.readmore-content .readmore-input p 
+{
+    color: black;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight:300;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-shadow: 2px 0px 0px black;
+}
+
+
+.book-container
+{
+   background-color: rgba(245, 245, 245, 0.623);
+   margin: 100px; 
+   box-shadow: 10px 15px 20pxrgba(0, 0, 0, .1);
+   display: grid;
+   grid-template-columns: 40% 60%;
+}
+.book-container .book-time
+{
+    background-color: rgba(139, 69, 19, 0.692);
+    padding: 50px;
+    outline: 3px dashed black;
+    outline-offset: -30px;
+    text-align: center;
+    color: white;
+}
+.book-container .book-time .book-open 
+{
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: saddlebrown;
+    font-weight: 600;
+    text-shadow: 3px 0px 0px black;
+}
+.book-container .book-time .book-days
+{
+    font-size: 30px;
+    color: whitesmoke;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+    font-weight:300;
+    text-shadow: 3px 0px 0px black;
+}
+.book-container .book-time .book-see 
+{
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: saddlebrown;
+    font-weight: 600;
+    text-shadow: 3px 0px 0px black;
+}
+.book-form 
+{
+    padding: 20px 0;
+    margin: 0 auto;
+    color: black;
+    display: flex;
+    text-align: left;
+}
+form 
+{
+    display: grid;
+    grid-row-gap: 10px;
+}
+form p 
+{
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 1px 0px 0px black;
+}
+.book-online 
+{
+    font-size: 35px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: saddlebrown;
+    font-weight: 600;
+    text-shadow: 3px 0px 0px black;
+}
+.book-form  .form-field 
+{
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+.book-form  .form-field  input, select 
+{
+    pad: 10px 15px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.book-btn 
+{
+    width: 60%;
+    background: saddlebrown;
+    border-radius: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.book-btn:hover 
+{
+    color: black;
+    background: transparent;
+}
+
+.footer {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+  }
